@@ -16,13 +16,13 @@ public class CheckBoxPage extends BasePage {
 	}
 
 	// WebElement
-	@FindBy(how = How.XPATH, using = "//input[@name='allbox']")
+	@FindBy(how = How.NAME, using = "allbox")
 	WebElement TOGGLE_ALL_ELEMENT;
-	@FindBy(how = How.XPATH, using = "//input[@name='todo[0]']")
+	@FindBy(how = How.NAME, using = "todo[0]")
 	WebElement CHECKBOX_ELEMENT;
-	@FindBy(how = How.XPATH, using = "//input[@name='data']")
+	@FindBy(how = How.NAME, using = "data")
 	WebElement ADD_ELEMENT;
-	@FindBy(how = How.XPATH, using = "//input[@value='Add']")
+	@FindBy(how = How.CSS, using = "input[value='Add']")
 	WebElement SUBMIT_ELEMENT;
 
 	public void clickToggleAllElement() {

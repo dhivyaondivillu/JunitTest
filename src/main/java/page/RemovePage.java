@@ -15,15 +15,15 @@ public class RemovePage extends BasePage {
 	}
 
 	// WebElement
-	@FindBy(how = How.XPATH, using = "//input[@name='todo[0]']")
+	@FindBy(how = How.NAME, using = "todo[0]")
 	WebElement CHECKBOX_ELEMENT;
-	@FindBy(how = How.XPATH, using = "//input[@value='Remove']")
+	@FindBy(how = How.CSS, using = "input[value='Remove']")
 	WebElement REMOVE_BUTTON_ELEMENT;
 	@FindBy(how = How.XPATH, using = "//*[@id=\"todos-content\"]/form/ul/li[0]/a")
 	WebElement DELETED_ELEMENT;
-	@FindBy(how = How.XPATH, using = "//input[@name='data']")
+	@FindBy(how = How.NAME, using = "data")
 	WebElement ADD_ELEMENT;
-	@FindBy(how = How.XPATH, using = "//input[@value='Add']")
+	@FindBy(how = How.CSS, using = "input[value='Add']")
 	WebElement SUBMIT_ELEMENT;
 
 	public void clickCheckBoxElement() {
